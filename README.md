@@ -35,4 +35,6 @@ Por último, deverá ser feito um menu interativo com as seguintes ações imple
 
 
 ## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+No método AdicionarVeiculo(), utilizei o método ".Add(Console.ReadLine().ToUpper())" para inserir em uma string da lista "veiculos" a placa digitada pelo usuário e automaticamente converter para letras maiúsculas, permitindo que eu retirasse as conversões que já estavam presentes no código por redundância.
+Em seguida, no método RemoverVeiculo(), utilizei novamente "Console.ReadLine().ToUpper()" e armazenei em uma string "placa", que será utilizada como parâmetro para o if seguinte, onde caso a placa esteja na lista "veiculos" o usuário insere a quantidade de horas que o veículo permaneceu no estacionamento, faz o cálculo e informa a placa removida seguido do valor final.
+Por fim, no método ListarVeiculos() utilizei o laço de repetição "foreach" e como parâmetro "(string veiculo in veiculos)", o que faz com que cada item armazenado na lista "veiculos" seja copiado para a string "veiculo" e, em seguida, imprimido através do "Console.WriteLine(veiculo)"
